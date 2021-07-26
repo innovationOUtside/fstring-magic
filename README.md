@@ -1,5 +1,5 @@
 # fstring-magic
-Simple magic to interpret code cell content as a simple formatted string or as an f-string.
+Simple magic to interpret code cell content as a simple formatted string or as an f-string and then display formatted markdown output.
 
 Installation:
 
