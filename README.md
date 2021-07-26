@@ -1,5 +1,19 @@
 # fstring-magic
-Simple magic to interpret code cell content as a simple formatted string or as an f-string:
+Simple magic to interpret code cell content as a simple formatted string or as an f-string.
+
+Installation:
+
+`pip install git+https://github.com/innovationOUtside/fstring-magic.git`
+
+To load the magic: `load_ext fstring_magic`
+
+Two *%%block* magics are currently supported:
+
+`%%stringformat`: pass the content of the code cell to a string formatter running in the local scope (essentially `cell.format(**shell.user_ns) )`)
+
+`fstring`: treat the content of the code cell as an f-string (note this uses and `eval()` so treat with caution... Essentially runs `eval("f'''" + cell + "'''", local_ns)` 
+
+
 
 ![image](https://user-images.githubusercontent.com/82988/126971355-984c5aba-b78e-4943-b6be-d6bf44eedb53.png)
 
