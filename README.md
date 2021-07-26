@@ -20,3 +20,13 @@ Two *%%block* magics are currently supported:
 This might be useful where a notebook or markdown file is being used to author a Jupyter Book generated HTML site and inline code outputs are required in text without having to use [`glue`](https://jupyterbook.org/content/executable/output-insert.html). The code cell input should also be removed using a `remove-input` tag so that only the output formatted markdown is displayed. 
 
 See also: [`nbextensions/python-markdown`](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/python-markdown/readme.html) — _"displaying output produced by the current kernel in markdown cells"_.
+
+
+TO DO: make a simple notebook pipleine processor to weave this into a Jupyter Book workflow ([related issue](https://github.com/innovationOUtside/ou-jupyter-book-tools/issues/4)). For example:
+
+```
+if cell.type=='md' and 'f-string` in tags:
+  #convert cell type to 'code'
+  # tag cell as `remove-input`
+  # prefix code cell body with appropriate magic
+```
