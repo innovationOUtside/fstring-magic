@@ -18,3 +18,5 @@ Two *%%block* magics are currently supported:
 ![image](images/fstring_magic.png)
 
 This might be useful where a notebook or markdown file is being used to author a Jupyter Book generated HTML site and inline code outputs are required in text without having to use [`glue`](https://jupyterbook.org/content/executable/output-insert.html). The code cell input should also be removed using a `remove-input` tag so that only the output formatted markdown is displayed. 
+
+See also: [`nbextensions/python-markdown`](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/python-markdown/readme.html) — _"displaying output produced by the current kernel in markdown cells"_.
