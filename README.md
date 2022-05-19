@@ -1,7 +1,7 @@
 # fstring-magic
 Simple magic to interpret code cell content as a simple formatted string or as an f-string and then display formatted markdown output.
 
-NOTE: the MyST parser can increasingly handle variable rendering in markdown, initially via [`glue`](https://myst-nb.readthedocs.io/en/latest/render/glue.html), but also now via an [`eval`](https://myst-nb.readthedocs.io/en/latest/render/inline.html) directive. At the time of writing, there is also a PR to bring `eval` directive into [`jupyterlab-myst`](https://github.com/executablebooks/jupyterlab-myst/pull/39).
+__NOTE: the MyST parser (as used in Jupyter Book) can increasingly handle variable rendering in markdown, initially via [`glue`](https://myst-nb.readthedocs.io/en/latest/render/glue.html), but also now via an [`eval`](https://myst-nb.readthedocs.io/en/latest/render/inline.html) directive. At the time of writing, there is also a PR to bring `eval` directive into [`jupyterlab-myst`](https://github.com/executablebooks/jupyterlab-myst/pull/39).__
 
 
 Installation:
